@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
     name='zappa-env',         # How you named your package folder (MyLib)
     packages=['zappa-env'],   # Chose the same as "name"
-    version='0.21',      # Start with a small number and increase it with every change you make
+    version='0.22',      # Start with a small number and increase it with every change you make
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
     # Give a short description about your library
@@ -12,7 +12,7 @@ setup(
     # Provide either the link to your github or to your website
     url='https://github.com/mrfleap/zappa-env',
     # I explain this later on
-    download_url='https://github.com/mrfleap/zappa-env/archive/0.2.tar.gz',
+    download_url='https://github.com/mrfleap/zappa-env/archive/0.22.tar.gz',
     # Keywords that define your package best
     keywords=['zappa', 'virtualenv', 'env', 'virtualenvironment'],
     install_requires=[            # I get to this in a second
@@ -20,7 +20,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'zappa-env = zappa-env.zappa-env:main',
+            'zappa-env=zappa-env.zappa-env:main',
         ],
     },
     classifiers=[

@@ -1,7 +1,7 @@
 from distutils.core import setup
 
-with open('README.md') as readme_file:
-    long_description = readme_file.read()
+with open('README.md',"r") as readme_file:
+    long = readme_file.read()
 
 setup(
     name='zappa-env',         # How you named your package folder (MyLib)
@@ -40,6 +40,6 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
+    long_description=long   ,
     long_description_content_type='text/markdown',
-    long_description=long_description,
 )

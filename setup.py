@@ -1,12 +1,12 @@
 from distutils.core import setup
 
-with open('README.md',"r") as readme_file:
+with open('README.md', "r") as readme_file:
     long = readme_file.read()
 
 setup(
     name='zappa-env',         # How you named your package folder (MyLib)
     packages=['zappa_env'],   # Chose the same as "name"
-    version='0.25',      # Start with a small number and increase it with every change you make
+    version='0.251',      # Start with a small number and increase it with every change you make
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
     # Give a short description about your library
@@ -16,7 +16,7 @@ setup(
     # Provide either the link to your github or to your website
     url='https://github.com/mrfleap/zappa-env',
     # I explain this later on
-    download_url='https://github.com/mrfleap/zappa-env/archive/0.25.tar.gz',
+    download_url='https://github.com/mrfleap/zappa-env/archive/0.251.tar.gz',
     # Keywords that define your package best
     keywords=['zappa', 'virtualenv', 'env', 'virtualenvironment'],
     install_requires=[            # I get to this in a second
@@ -40,6 +40,6 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    long_description=long   ,
+    long_description=long,
     long_description_content_type='text/markdown',
 )

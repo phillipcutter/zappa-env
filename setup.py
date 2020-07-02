@@ -1,18 +1,24 @@
 from distutils.core import setup
+
+with open('README.md') as readme_file:
+    long_description = readme_file.read()
+
 setup(
     name='zappa-env',         # How you named your package folder (MyLib)
     packages=['zappa_env'],   # Chose the same as "name"
-    version='0.23',      # Start with a small number and increase it with every change you make
+    version='0.24',      # Start with a small number and increase it with every change you make
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
     # Give a short description about your library
     description='Run Zappa commands with Python virtual environments',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Phillip Cutter',                   # Type in your name
     author_email='mrfleap@gmail.com',      # Type in your E-Mail
     # Provide either the link to your github or to your website
     url='https://github.com/mrfleap/zappa-env',
     # I explain this later on
-    download_url='https://github.com/mrfleap/zappa-env/archive/0.23.tar.gz',
+    download_url='https://github.com/mrfleap/zappa-env/archive/0.24.tar.gz',
     # Keywords that define your package best
     keywords=['zappa', 'virtualenv', 'env', 'virtualenvironment'],
     install_requires=[            # I get to this in a second
